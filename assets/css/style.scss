@@ -1,0 +1,591 @@
+@import "mixin.scss";
+
+/*vars*/
+
+:root {
+    --container-width: 1920px;
+    --container-padding: 120px;
+
+
+    --font-family-main: "Montserrat";
+    --font-size-main: 36px;
+    --font-weigth-main: 400;
+    --font--height-main: 120px;
+    --text-color: #dadcd3;
+    ;
+}
+
+html {
+    width: 100%;
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: var(--font-family-main);
+    font-size: var(--font-size-main);
+    font-weight: var(--font-weigth-main);
+    line-height: var(--font--height-main);
+    color: var(--text-color);
+    background-color: var(--page-bg);
+}
+
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    display: inline-block;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+
+img {
+    display: block;
+}
+
+a {
+    color: var(--text-color);
+}
+
+/* common */
+.container {
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    max-width: var(--container-width);
+    width: 100%;
+}
+
+.btn {
+    background-color: #76b82a;
+    border: 1px solid #dbdef6;
+    border-radius: 12px;
+    width: fit-content;
+    height: 117px;
+    // @include adaptive-height(24, 40, 1920);
+    min-width: 458px;
+
+    // font-family: "Mont-Book";
+    font-family: "Montserrat";
+    font-size: 40px;
+    // @include adaptive-font-size(24, 40, 1920);
+    // font-weight: normal;
+    font-weight: 500;
+    line-height: 120%;
+    font-style: normal;
+    text-align: left;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+
+    &:hover,
+    &:active {
+        opacity: 0.8;
+    }
+}
+
+.magic-pade {
+    padding: 50px 0;
+    background: #034e73 url(../images/back.png) center no-repeat;
+    background-size: cover;
+}
+
+/*section-top*/
+
+.section-top__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-top__col {
+    &:first-child {
+        width: 48%;
+    }
+
+    &:last-child {
+        width: 52%;
+        padding-left: 30px;
+    }
+}
+
+.section-top__title {
+    // filter: drop-shadow(3px 7px 5px rgba(211.00067138671875,101.00234985351562,27.00347900390625,0.43));
+    // font-family: "Mont-Book";
+    font-family: "Montserrat";
+    // font-size: 130px;
+    @include adaptive-font-size(50, 130, 1920);
+    line-height: 120%;
+    // font-weight: normal;
+    font-weight: 500;
+    // line-height: 130px;
+    font-style: normal;
+    color: rgba(217.99695, 219.99615, 210.99975, 1);
+}
+
+.section-form__title {
+    // filter: drop-shadow(3px 7px 5px rgba(211.00067138671875,101.00234985351562,27.00347900390625,0.43));
+    // font-family: "Mont-Light";
+    font-family: "Montserrat";
+    font-size: 60px;
+    @include adaptive-font-size(30, 60, 1920);
+    line-height: 120%;
+    // font-weight: normal;
+    font-weight: 300;
+    // line-height: 120px;
+    font-style: normal;
+    text-align: center;
+    color: rgba(217.99695, 219.99615, 210.99975, 1);
+}
+
+.section-form {
+    margin-top: 100px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-item {
+    margin-top: 60px;
+    width: 911px;
+    height: 116px;
+    display: block;
+}
+
+.input-item__input {
+    display: block;
+    width: 100%;
+    height: inherit;
+    padding: 4px 20px;
+    background-color: #dadcd3;
+    color: #ffffff;
+    border: 1px solid #dbdef6;
+    border-radius: 12px;
+    transition: all 300ms;
+    // filter: drop-shadow(3px 7px 5px rgba(211.00067138671875, 101.00234985351562, 27.00347900390625, 0.43)) font-family: "Mont-Light";
+    // font-family: "Mont-Light";
+    font-family: "Montserrat";
+    font-size: 36px;
+    // @include adaptive-font-size(20, 36, 1920);
+    line-height: 120%;
+    // font-weight: normal;
+    font-weight: 300;
+    // line-height: 120px;
+    font-style: normal;
+    text-align: center;
+    color: #0c6689;
+
+    &::placeholder {
+        color: #0c6689;
+    }
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+.btn-wrap {
+    margin-top: 30px;
+}
+
+.btn-default {
+    margin-top: 60px;
+    // font-family: "Mont-Regular";
+    font-family: "Montserrat";
+    font-size: 36px;
+    @include adaptive-font-size(22, 36, 1920);
+    line-height: 120%;
+    // font-weight: normal;
+    font-weight: 400;
+    // line-height: 120px;
+    font-style: normal;
+    text-align: left;
+    text-align: center;
+}
+
+.section-form__bottom {
+    display: none;
+}
+
+.section-form__map-wrap {
+    position: relative;
+}
+
+.magic-btns {
+    padding: 50px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.magic-btn {
+    position: absolute;
+    height: fit-content !important;
+    // font-family: "Mont-Book";
+    font-family: "Montserrat";
+    // font-size: 30px;
+    @include adaptive-font-size(20, 30, 1920);
+    // font-weight: normal;
+    line-height: 100%;
+    // font-style: normal;
+    font-weight: 500;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    min-width: unset;
+    padding: 10px 30px;
+    cursor: default;
+
+    background-color: #76b82a;
+    border: 1px solid #dbdef6;
+    border-radius: 12px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/*footer*/
+.footer {
+    margin-top: 200px;
+}
+
+.logo {
+    margin: 0 auto;
+    width: fit-content;
+    display: block;
+}
+
+/*popup*/
+.magic-pade-popup {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: #02446447;
+}
+
+.magic-pade-popup__content {
+    width: 967px;
+    // width: 768px;
+    height: 314px;
+    padding: 50px 100px;
+    border-radius: 12px;
+    background-color: #dadcd3;
+    border: 1px solid #dbdef6;
+    // font-family: "Mont-Regular";
+    font-family: "Montserrat";
+    // font-size: 60px;
+    @include adaptive-font-size(30, 60, 1920);
+    line-height: 100%;
+    // font-weight: normal;
+    font-weight: 400;
+    // line-height: 60px;
+    font-style: normal;
+    text-align: center;
+    color: rgba(0, 91.99889999999999, 135.0021, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.magic-pade-popup.opened  {
+    display: flex;
+}
+.magic-pade-popup.opened .magic-pade-popup__content {
+    animation-name: popupAppearanceAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+
+
+@keyframes popupAppearanceAnimation {
+    from {
+        opacity: 0;
+        transform: rotateX(-45deg) rotateY(-45deg) scale(0.3);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0) rotateY(0) scale(1);
+    }
+}
+
+.magic-btn {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.magic-btn.show {
+    opacity: 1;
+}
+
+.magic-btn.hide {
+    opacity: 0;
+}
+
+/* Анимация для появления и исчезновения */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .btn {
+        font-size: 28px;
+        height: 80px;
+    }
+
+    .input-item {
+        height: 80px;
+    }
+
+    .input-item__input {
+        font-size: 28px;
+    }
+
+    .btn-wrap {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .magic-pade {
+        padding: 30px 0;
+    }
+
+    .container {
+        padding: 0 50px;
+    }
+
+    .input-item {
+        width: 100%;
+    }
+
+    .section-top__inner {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-top__col:first-child {
+        width: 100%;
+    }
+
+    .section-top__col:last-child {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .section-top__title {
+        text-align: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .btn {
+        padding: 20px;
+        font-size: 22px;
+        height: 60px;
+    }
+
+    .input-item {
+        height: 60px;
+    }
+
+    .input-item__input {
+        font-size: 22px;
+        padding: 20px;
+        @include text-overflow-line(1);
+    }
+
+    .btn-default,
+    .input-item {
+        margin-top: 40px;
+    }
+
+    .section-form__map-wrap {
+        margin-top: 20px;
+    }
+
+    .magic-pade-popup__content {
+        width: 96%;
+        padding: 100px 40px;
+        height: fit-content;
+    }
+
+    .footer {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .section-form {
+        margin-top: 50px;
+    }
+
+    .btn-wrap {
+        width: 100%;
+    }
+
+    .btn {
+        min-width: 100%;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+}

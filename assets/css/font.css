@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Mont-Regular";
+  src: url("../fonts/Mont-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont-Light";
+  src: url("../fonts/Mont-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-v29-cyrillic_latin-300.woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-v29-cyrillic_latin-regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-v29-cyrillic_latin-500.woff2");
+  font-weight: 500;
+  font-style: normal;
+}
