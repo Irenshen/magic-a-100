@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*vars*/
-:root { --container-width: 1920px; --container-padding: 120px; --font-family-main: "Montserrat"; --font-size-main: 36px; --font-weigth-main: 400; --font--height-main: 120px; --text-color: #dadcd3; }
+:root { --container-width: 1920px; --container-padding: 120px; --font-family-main: "Mont"; --font-size-main: 36px; --font-weigth-main: 400; --font--height-main: 120px; --text-color: #dadcd3; }
 
 html { width: 100%; scrollbar-gutter: stable; scroll-behavior: smooth; }
 
@@ -48,7 +48,7 @@ a { color: var(--text-color); }
 /* common */
 .container { margin: 0 auto; padding: 0 var(--container-padding); max-width: var(--container-width); width: 100%; }
 
-.btn { background-color: #76b82a; border: 1px solid #dbdef6; border-radius: 12px; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: 117px; min-width: 458px; font-family: "Montserrat"; font-size: 40px; font-weight: 500; line-height: 120%; font-style: normal; text-align: left; color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; cursor: pointer; }
+.btn { background-color: #76b82a; border: 1px solid #dbdef6; border-radius: 12px; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: 117px; min-width: 458px; font-family: "Mont"; font-size: 40px; font-weight: 500; line-height: 120%; font-style: normal; text-align: left; color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; cursor: pointer; }
 .btn:hover, .btn:active { opacity: 0.8; }
 
 .magic-pade { padding: 50px 0; background: #034e73 url(../images/back.png) center no-repeat; background-size: cover; }
@@ -59,9 +59,9 @@ a { color: var(--text-color); }
 .section-top__col:first-child { width: 48%; }
 .section-top__col:last-child { width: 52%; padding-left: 30px; }
 
-.section-top__title { font-family: "Montserrat"; font-size: calc(max(3.125rem, min(6.7708333333vw, 8.125rem))); line-height: 120%; font-weight: 500; font-style: normal; color: #dadcd3; }
+.section-top__title { font-family: "Mont"; font-size: calc(max(2.625rem, min(6.7708333333vw, 8.125rem))); line-height: 120%; font-weight: 400; font-style: normal; color: #dadcd3; }
 
-.section-form__title { font-family: "Montserrat"; font-size: 60px; font-size: calc(max(1.875rem, min(3.125vw, 3.75rem))); line-height: 120%; font-weight: 300; font-style: normal; text-align: center; color: #dadcd3; }
+.section-form__title { font-family: "Mont"; font-size: 60px; font-size: calc(max(1.75rem, min(3.125vw, 3.75rem))); line-height: 120%; font-weight: 300; font-style: normal; text-align: center; color: #dadcd3; }
 
 .section-form { margin-top: 100px; }
 
@@ -69,7 +69,7 @@ a { color: var(--text-color); }
 
 .input-item { margin-top: 60px; width: 911px; height: 116px; display: block; }
 
-.input-item__input { display: block; width: 100%; height: inherit; padding: 4px 20px; background-color: #dadcd3; color: #ffffff; border: 1px solid #dbdef6; border-radius: 12px; -webkit-transition: all 300ms; transition: all 300ms; font-family: "Montserrat"; font-size: 36px; line-height: 120%; font-weight: 300; font-style: normal; text-align: center; color: #0c6689; }
+.input-item__input { display: block; width: 100%; height: inherit; padding: 4px 20px; background-color: #dadcd3; color: #ffffff; border: 1px solid #dbdef6; border-radius: 12px; -webkit-transition: all 300ms; transition: all 300ms; font-family: "Mont"; font-size: 36px; line-height: 120%; font-weight: 300; font-style: normal; text-align: center; color: #0c6689; }
 .input-item__input::-webkit-input-placeholder { color: #0c6689; }
 .input-item__input:-ms-input-placeholder { color: #0c6689; }
 .input-item__input::-ms-input-placeholder { color: #0c6689; }
@@ -79,7 +79,7 @@ input.error { border: 1px solid red; }
 
 .btn-wrap { margin-top: 30px; }
 
-.btn-default { margin-top: 60px; font-family: "Montserrat"; font-size: 36px; font-size: calc(max(1.375rem, min(1.875vw, 2.25rem))); line-height: 120%; font-weight: 400; font-style: normal; text-align: left; text-align: center; }
+.btn-default { margin-top: 60px; font-family: "Mont"; font-size: 36px; font-size: calc(max(1.375rem, min(1.875vw, 2.25rem))); line-height: 120%; font-weight: 400; font-style: normal; text-align: left; text-align: center; }
 
 .section-form__bottom { display: none; }
 
@@ -87,7 +87,7 @@ input.error { border: 1px solid red; }
 
 .magic-btns { padding: 50px; position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
 
-.magic-btn { position: absolute; height: -webkit-fit-content !important; height: -moz-fit-content !important; height: fit-content !important; font-family: "Montserrat"; font-size: calc(max(1.25rem, min(1.5625vw, 1.875rem))); line-height: 100%; font-weight: 500; text-align: left; color: white; min-width: unset; padding: 10px 30px; cursor: default; background-color: #76b82a; border: 1px solid #dbdef6; border-radius: 12px; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+.magic-btn { position: absolute; height: -webkit-fit-content !important; height: -moz-fit-content !important; height: fit-content !important; font-family: "Mont"; font-size: calc(max(0.875rem, min(1.5625vw, 1.875rem))); line-height: 100%; font-weight: 500; text-align: left; color: white; min-width: unset; padding: 10px 30px; cursor: default; background-color: #76b82a; border: 1px solid #dbdef6; border-radius: 12px; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
 
 /*footer*/
 .footer { margin-top: 200px; }
@@ -97,7 +97,7 @@ input.error { border: 1px solid red; }
 /*popup*/
 .magic-pade-popup { display: none; position: fixed; z-index: 5; width: 100%; height: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; top: 0; left: 0; background-color: #02446447; }
 
-.magic-pade-popup__content { width: 967px; height: 314px; padding: 50px 100px; border-radius: 12px; background-color: #dadcd3; border: 1px solid #dbdef6; font-family: "Montserrat"; font-size: calc(max(1.875rem, min(3.125vw, 3.75rem))); line-height: 100%; font-weight: 400; font-style: normal; text-align: center; color: #005c87; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.magic-pade-popup__content { width: 967px; height: 314px; padding: 50px 100px; border-radius: 12px; background-color: #dadcd3; border: 1px solid #dbdef6; font-family: "Mont"; font-size: calc(max(1.875rem, min(3.125vw, 3.75rem))); line-height: 100%; font-weight: 400; font-style: normal; text-align: center; color: #005c87; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .magic-pade-popup.opened { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -145,4 +145,6 @@ input.error { border: 1px solid red; }
   .btn-wrap { width: 100%; }
   .btn { min-width: 100%; }
   .logo { width: 140px; }
+  .magic-btn { padding: 4px 20px; border-radius: 4px; }
+  .input-item__input, .form .btn, .btn-default { font-size: 18px; }
   .footer { margin-top: 50px; } }

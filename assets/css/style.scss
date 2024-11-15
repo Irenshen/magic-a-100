@@ -1,5 +1,7 @@
 @import "mixin.scss";
 
+
+
 /*vars*/
 
 :root {
@@ -7,7 +9,7 @@
     --container-padding: 120px;
 
 
-    --font-family-main: "Montserrat";
+    --font-family-main: "Mont";
     --font-size-main: 36px;
     --font-weigth-main: 400;
     --font--height-main: 120px;
@@ -168,7 +170,7 @@ a {
     min-width: 458px;
 
     // font-family: "Mont-Book";
-    font-family: "Montserrat";
+    font-family: "Mont";
     font-size: 40px;
     // @include adaptive-font-size(24, 40, 1920);
     // font-weight: normal;
@@ -220,12 +222,12 @@ a {
 .section-top__title {
     // filter: drop-shadow(3px 7px 5px rgba(211.00067138671875,101.00234985351562,27.00347900390625,0.43));
     // font-family: "Mont-Book";
-    font-family: "Montserrat";
+    font-family: "Mont";
     // font-size: 130px;
-    @include adaptive-font-size(50, 130, 1920);
+    @include adaptive-font-size(42, 130, 1920);
     line-height: 120%;
     // font-weight: normal;
-    font-weight: 500;
+    font-weight: 400;
     // line-height: 130px;
     font-style: normal;
     color: rgba(217.99695, 219.99615, 210.99975, 1);
@@ -234,9 +236,9 @@ a {
 .section-form__title {
     // filter: drop-shadow(3px 7px 5px rgba(211.00067138671875,101.00234985351562,27.00347900390625,0.43));
     // font-family: "Mont-Light";
-    font-family: "Montserrat";
+    font-family: "Mont";
     font-size: 60px;
-    @include adaptive-font-size(30, 60, 1920);
+    @include adaptive-font-size(28, 60, 1920);
     line-height: 120%;
     // font-weight: normal;
     font-weight: 300;
@@ -276,7 +278,7 @@ a {
     transition: all 300ms;
     // filter: drop-shadow(3px 7px 5px rgba(211.00067138671875, 101.00234985351562, 27.00347900390625, 0.43)) font-family: "Mont-Light";
     // font-family: "Mont-Light";
-    font-family: "Montserrat";
+    font-family: "Mont";
     font-size: 36px;
     // @include adaptive-font-size(20, 36, 1920);
     line-height: 120%;
@@ -303,7 +305,7 @@ input.error {
 .btn-default {
     margin-top: 60px;
     // font-family: "Mont-Regular";
-    font-family: "Montserrat";
+    font-family: "Mont";
     font-size: 36px;
     @include adaptive-font-size(22, 36, 1920);
     line-height: 120%;
@@ -336,9 +338,9 @@ input.error {
     position: absolute;
     height: fit-content !important;
     // font-family: "Mont-Book";
-    font-family: "Montserrat";
+    font-family: "Mont";
     // font-size: 30px;
-    @include adaptive-font-size(20, 30, 1920);
+    @include adaptive-font-size(14, 30, 1920);
     // font-weight: normal;
     line-height: 100%;
     // font-style: normal;
@@ -404,7 +406,7 @@ input.error {
     background-color: #dadcd3;
     border: 1px solid #dbdef6;
     // font-family: "Mont-Regular";
-    font-family: "Montserrat";
+    font-family: "Mont";
     // font-size: 60px;
     @include adaptive-font-size(30, 60, 1920);
     line-height: 100%;
@@ -583,6 +585,15 @@ input.error {
 
     .logo {
         width: 140px;
+    }
+
+    .magic-btn {
+        padding: 4px 20px;
+        border-radius: 4px;
+    }
+
+    .input-item__input, .form .btn, .btn-default {
+        font-size: 18px;
     }
 
     .footer {
